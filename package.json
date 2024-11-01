@@ -1,0 +1,21 @@
+{
+  "name": "ticketleo-events",
+  "version": "1.0.0",
+  "description": "## Voraussetzungen Um dieses Plugin zu benutzen, müssen Sie einen Ticketleo Account besitzen. Falls Sie noch keinen haben, können Sie ganz einfach und schnell einen erstellen.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "wp-scripts start blocks/event/event.js blocks/eventslist/eventslist.js",
+    "build": "wp-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hayloft-IT GmbH",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/icons": "^10.6.0",
+    "@wordpress/scripts": "^28.6.0",
+    "@wordpress/server-side-render": "^5.6.0"
+  }
+}

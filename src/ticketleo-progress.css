@@ -1,0 +1,12 @@
+.ticketleo-event-progress {
+    width: var(--ticketleo-progress-width, 100%);
+    height: var(--ticketleo-progress-height, 30px);
+    background: var(--ticketleo-progress-bg, var(--wp--preset--color--accent-2));
+    position: relative;
+    display: inline-block;
+}
+
+.ticketleo-event-progress__bar {
+    background: var(--ticketleo-progress-color, var(--wp--preset--color--accent-3));
+    height: 100%;
+}

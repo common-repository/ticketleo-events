@@ -1,0 +1,45 @@
+.ticketleo-event-progress__tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background: var(--ticketleo-tooltip-bg-color, var(--wp--preset--color--base));
+    color: var(--ticketleo-tooltip-text-color, var(--wp--preset--color--contrast));
+    text-align: var(--ticketleo-tooltip-text-align, center);
+    border: var(--ticketleo-tooltip-border-width, 1px) var(--ticketleo-tooltip-border-style, solid) var(--ticketleo-tooltip-border-color, var(--wp--preset--color--contrast));
+    border-radius: var(--ticketleo-tooltip-border-radius, .33rem);
+    padding-block: var(--ticketleo-tooltip-padding-block, .5rem);
+    padding-inline: var(--ticketleo-tooltip-padding-inline, 1rem);
+    position: absolute;
+    bottom: var(--ticketleo-tooltip-bottom-position, 70%);
+    left: var(--ticketleo-tooltip-left-position, 50%);
+    transform: translateX(var(--ticketleo-tooltip-offset, -50%));
+    font-size: var(--ticketleo-tooltip-fontsize, .8em);
+    transition: opacity var(--ticketleo-tooltip-animation-duration,.2s);
+}
+
+.ticketleo-event-progress__tooltip::before,
+.ticketleo-event-progress__tooltip::after {
+    content: '';
+    position: absolute;
+    border-left: var(--ticketleo-tooltip-arrow-border-width, 5px) var(--ticketleo-tooltip-arrow-border-style, solid) var(--ticketleo-tooltip-arrow-border-color-inline, transparent);
+    border-right: var(--ticketleo-tooltip-arrow-border-width, 5px) var(--ticketleo-tooltip-arrow-border-style, solid) var(--ticketleo-tooltip-arrow-border-color-inline, transparent);
+    top: 100%;
+    left: 50%;
+    transform: translateX(var(--ticketleo-tooltip-offset, -50%));
+    margin-left: calc(var(--ticketleo-tooltip-arrow-border-width, 5px) * -1);
+}
+
+.ticketleo-event-progress__tooltip::before {
+    border-top: var(--ticketleo-tooltip-arrow-border-width, 5px) var(--ticketleo-tooltip-arrow-border-style, solid) var(--ticketleo-tooltip-arrow-border-color, var(--wp--preset--color--contrast));
+    margin-top: var(--ticketleo-tooltip-arrow-top-offset, 1px);
+}
+
+.ticketleo-event-progress__tooltip::after {
+    border-top: var(--ticketleo-tooltip-arrow-border-width, 5px) var(--ticketleo-tooltip-arrow-border-style, solid) var(--ticketleo-tooltip-arrow-border-color, var(--wp--preset--color--base));
+    z-index: 1;
+}
+
+.ticketleo-event-progress:hover .ticketleo-event-progress__tooltip {
+    visibility: visible;
+    opacity: 1;
+}

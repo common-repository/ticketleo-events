@@ -1,0 +1,43 @@
+.ticketleo-events-table .ticketleo-event--not-bookable {
+    .ticketleo-events__title,
+    .ticketleo-event-timing__date,
+    .ticketleo-event-timing__time,
+    .ticketleo-event__status {
+        span {
+            opacity: var(--ticketleo-not-bookable-opacity, .52);
+        }
+    }
+}
+
+.ticketleo-events-list .ticketleo-event--not-bookable,
+.ticketleo-events-grid .ticketleo-event--not-bookable {
+    .ticketleo-events__title,
+    .ticketleo-event-timing__date,
+    .ticketleo-event-timing__time,
+    .ticketleo-event__status {
+        opacity: var(--ticketleo-not-bookable-opacity, .52);
+    }
+}
+
+.ticketleo-event__header {
+    max-width: 100%;
+    position: relative;
+}
+
+.ticketleo-event__header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: var(--ticketleo-header-aspect-ratio, 1.53);
+}
+
+.ticketleo-event__header .ticketleo-badge {
+    bottom: var(--ticketleo-badge-bottom-position, .5em);
+    left: var(--ticketleo-badge-left-position, 0);
+}
+
+.block-editor-block-list__block .wp-block-ticketleo-events-eventslist,
+.block-editor-block-list__block .wp-block-ticketleo-events-event {
+    pointer-events: none;
+}

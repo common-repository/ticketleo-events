@@ -1,0 +1,27 @@
+.ticketleo-btn .ticketleo-btn__link {
+    text-decoration: var(--ticketleo-btn-decoration, none);
+    padding-block: var(--ticketleo-btn-padding-block, .6rem);
+    padding-inline: var(--ticketleo-btn-padding-inline, 1rem);
+    border-radius: var(--ticketleo-btn-border-radius, .33rem);
+    font-size: var(--ticketleo-btn-fontsize, .9rem);
+}
+
+.ticketleo-btn--show .ticketleo-btn__link {
+    padding-block: var(--ticketleo-btn-padding-block, 0);
+    padding-inline: var(--ticketleo-btn-padding-inline, 0);
+    color: var(--ticketleo-btn-text-color, var(--wp--preset--color--contrast));
+}
+
+.ticketleo-btn--bookable .ticketleo-btn__link {
+    background: var(--ticketleo-btn-bg-color, var(--wp--preset--color--contrast));
+    color: var(--ticketleo-btn-text-color, var(--wp--preset--color--base));
+}
+
+.ticketleo-btn--bookable:hover .ticketleo-btn__link {
+    background: var(--ticketleo-btn-hover-bg, var(--wp--preset--color--contrast-2));
+    color: var(--ticketleo-btn-hover-text, var(--wp--preset--color--base));
+}
+
+.ticketleo-btn--show:hover .ticketleo-btn__link {
+    text-decoration: var(--ticketleo-btn-decoration, underline);
+}

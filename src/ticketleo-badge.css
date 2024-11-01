@@ -1,0 +1,9 @@
+.ticketleo-badge {
+    background: var(--ticketleo-badge-bg-color, var(--wp--preset--color--contrast));
+    color: var(--ticketleo-badge-text-color, var(--wp--preset--color--base));
+    padding-block: var(--ticketleo-badge-padding-block, .5em);
+    padding-inline: var(--ticketleo-badge-padding-inline, .5em);
+    width: var(--ticketleo-badge-width, fit-content);
+    font-size: var(--ticketleo-badge-fontsize, .8em);
+    white-space: var(--ticketleo-badge-wrap, nowrap);
+}

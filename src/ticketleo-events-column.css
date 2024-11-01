@@ -1,0 +1,38 @@
+.ticketleo-events-column {
+    padding-block: var(--ticketleo-padding-block, 1rem);
+    padding-inline: var(--ticketleo-padding-inline, 1rem);
+}
+
+.ticketleo-events-column--image {
+    max-width: var(--ticketleo-img-max-width, 300px);
+    width: var(--ticketleo-img-width, 100%);
+    padding-block: var(--ticketleo-padding-block, 0);
+    padding-inline: var(--ticketleo-padding-inline, 0);
+}
+
+.ticketleo-events-column--image img {
+    width: var(--ticketleo-img-width, 100%);
+    height: var(--ticketleo-img-height, 100%);
+    object-fit: var(--ticketleo-img-object-fit, cover);
+    object-position: var(--ticketleo-img-object-position, center);
+}
+
+.ticketleo-events-column--info {
+    display: var(--ticketleo-column-layout, flex);
+    justify-content: var(--ticketleo-column-justify, space-between);
+    align-items: var(--ticketleo-column-align, center);
+    flex-wrap: var(--ticketleo-flex-wrap, wrap);
+    width: var(--ticketleo-column-width, 100%);
+}
+
+@media screen and (max-width: 700px) {
+    .ticketleo-events-column--image {
+        max-width: var(--ticketleo-img-max-width, 100%);
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1199px) {
+    .ticketleo-events-column--image {
+        max-width: var(--ticketleo-img-max-width, 200px);
+    }
+}

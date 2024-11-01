@@ -1,0 +1,4 @@
+.ticketleo-events__title {
+    margin-block: var(--ticketleo-margin-block, 0);
+    margin-inline: var(--ticketleo-margin-inline, 0);
+}

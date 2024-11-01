@@ -1,0 +1,27 @@
+.ticketleo-events-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ticketleo-events-list .ticketleo-event {
+    display: var(--ticketleo-list-layout, flex);
+    justify-content: var(--ticketleo-list-justify, space-between);
+    border: var(--ticketleo-border-width, 1px) var(--ticketleo-border-style, solid) var(--ticketleo-border-color, var(--wp--preset--color--contrast));
+    position: relative;
+    flex-wrap: var(--ticketleo-flex-wrap, nowrap);
+}
+
+@media screen and (max-width: 700px) {
+    .ticketleo-events-list .ticketleo-event {
+        flex-wrap: var(--ticketleo-flex-wrap, wrap);
+    }
+}
+
+.ticketleo-events-list .ticketleo-event:not(:last-child) {
+    margin-bottom: var(--ticketleo-spacing-bottom, 1.5rem);
+}
+
+.ticketleo-events-list .ticketleo-badge {
+    position: var(--ticketleo-badge-position, absolute);
+    transform: translateY(calc(var(--ticketleo-badge-offset, 2rem) * var(--ticketleo-badge-multiplicator, -1)));
+}

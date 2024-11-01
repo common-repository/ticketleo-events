@@ -1,0 +1,40 @@
+.ticketleo-events-table {
+    width: 100%;
+    border-collapse: var(--ticketleo-border-collapse, collapse);
+    border-spacing: var(--ticketleo-border-spacing, 2px);
+    border: var(--ticketleo-border-width, 1px) var(--ticketleo-border-style, solid) var(--ticketleo-border-color, var(--wp--preset--color--contrast));
+}
+
+.ticketleo-events-table thead {
+    border-bottom: var(--ticketleo-border-width, 3px) var(--ticketleo-border-style, solid) var(--ticketleo-border-color, var(--wp--preset--color--contrast));
+}
+
+.ticketleo-events-table th, td {
+    border-block: var(--ticketleo-border-width, 1px) var(--ticketleo-border-style, solid) var(--ticketleo-border-color, var(--wp--preset--color--contrast));
+    padding-inline: var(--ticketleo-padding-inline, .5rem);
+    padding-block: var(--ticketleo-padding-block, .5rem);
+}
+
+.ticketleo-event td {
+    padding-block: var(--ticketleo-padding-block, .5rem);
+}
+
+.ticketleo-events-table .ticketleo-event:nth-child(even) {
+    background: var(--ticketleo-even-rows-color, #f0f0f0);
+}
+
+@media screen and (min-width: 1000px) {
+    .responsive-container .ticketleo-events-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .ticketleo-events-table {
+        display: none;
+    }
+
+    .responsive-container .ticketleo-events-list {
+        display: block;
+    }
+}

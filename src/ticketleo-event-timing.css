@@ -1,0 +1,11 @@
+.ticketleo-events-list .ticketleo-event-timing,
+.ticketleo-events-grid .ticketleo-event-timing {
+    display: var(--ticketleo-timing-layout, flex);
+    gap: var(--ticketleo-timing-gap, 1rem);
+    margin-block: var(--ticketleo-margin-block, 1rem);
+}
+
+.ticketleo-events-list .ticketleo-event-timing:first-child,
+.ticketleo-events-grid .ticketleo-event-timing:first-child {
+    margin-top: 0;
+}

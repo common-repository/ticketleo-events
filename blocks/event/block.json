@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ticketleo-events/event",
+  "version": "0.1.0",
+  "title": "Einzelne Veranstaltung",
+  "category": "text",
+  "icon": "tickets",
+  "description": "Rufen Sie alle Vorstellungen einer Veranstaltung von Ticketleo anhand der Event-ID ab.",
+  "textdomain": "ticketleo-events",
+  "supports": {
+    "align": true
+  },
+  "attributes": {
+    "eventId": {
+      "type": "number"
+    },
+    "viewOptionLabel": {
+      "type": "string",
+      "default": "Tabellarisch"
+    },
+    "viewOptionValue": {
+      "type": "string",
+      "default": "table"
+    },
+    "showMetaDataLabel": {
+      "type": "boolean",
+      "default": false
+    },
+    "showMetaDataStatus": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./event.js",
+  "editorStyle": "file:../../src/style.css",
+  "style": "file:../../src/style.css",
+  "render": "file:./event.php"
+}
+
+
